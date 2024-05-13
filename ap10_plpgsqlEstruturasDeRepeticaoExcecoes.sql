@@ -6,3 +6,6 @@
 --    RETURN FLOOR(RANDOM() * (lim_superior - lim_inferior + 1) + lim_inferior)::INT;
 --END;
 --$$ LANGUAGE plpgsql;
+
+---Testando função;
+--SELECT valor_aleatorio_entre(2,10); ---Função realizada com sucesso!
