@@ -81,3 +81,9 @@
 --	END LOOP;
 --END;
 --$$
+
+----LOOP com rótulo associado.
+--Pode ser usado pelas construção EXIT/CONTINUE quando:
+--1. há um único LOOP, elas se referem a ele e o uso de rótulos é opcional
+--2. Quando há um LOOP aninhado, as construções EXIT e CONTINUE se referem ao mais interno por padrão
+--Podemos alterar esse funcionamento usando um rótulo
