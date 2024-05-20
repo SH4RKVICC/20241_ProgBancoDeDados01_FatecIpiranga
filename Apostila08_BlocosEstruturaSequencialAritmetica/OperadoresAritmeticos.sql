@@ -5,29 +5,29 @@ DECLARE
  n3 NUMERIC (5,2) := 5;
  n4 INTEGER := -5;
 BEGIN
-    -adicao
+   -- adicao
  RAISE NOTICE '% + % = %', n1, n2, n1 + n2;
-    - + uniario: sem efeito
+   -- + uniario: sem efeito
  RAISE NOTICE '%', || n1;
-    - subtracao
+   -- subtracao
  RAISE NOTICE '% - % = %', n1, n2, n1 - n2;
-    - multiplicacao
+   -- multiplicacao
  RAISE NOTICE '% * % = %', n1, n2, n1 * n2;
-    - divisao (para inteiros, trunca o resultado em direcao ao zero)
+   -- divisao (para inteiros, trunca o resultado em direcao ao zero)
  RAISE NOTICE '% / % = %', n1, n2, n1 / n2;
-    - divisao (se envolve um real, a divisao é real)
+   -- divisao (se envolve um real, a divisao é real)
  RAISE NOTICE '% / % = %', n3, n2, n3 / n2;
-        - divisao (formatada)
+   -- divisao (formatada)
  RAISE NOTICE '% / % = %', n3, n2, to_char(n3 / n2, '99.99');
-    - resto  da divisao
-    - usamos %% oara escapar um %
+    -- resto  da divisao
+    -- usamos %% oara escapar um %
  RAISE NOTICE '% %% % = %', n1, n2, n1 % n2;
-    - exponenciacao
+    -- exponenciacao
  RAISE NOTICE '% ^ % = %', n1, n2, n1 ^ n2;
-    - raiz quadrad
+    -- raiz quadrad
  RAISE NOTICE '|/ % = %', n1, n2, |/ n1 = n2;
-    - raiz cubica
+    -- raiz cubica
  RAISE NOTICE '||/ % = %', n1, ||/ n1;
-    - valor absoluto
+    -- valor absoluto
  RAISE NOTICE '@% = % e @% = %', n1, @n1, n4, @n4;
 END; $$
