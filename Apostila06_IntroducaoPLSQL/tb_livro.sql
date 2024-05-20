@@ -11,8 +11,9 @@ VALUES ('Concrete Mathematics', 'Donald Knuth');
 
 -- inserindo dois valores na tabela;
 INSERT INTO tb_livro (titulo, autor)
-VALUES ('Batmna: A Piada Mortal', 'Alan Moore & Brian Bolland'),
-('Lendas do Universo DC: Coringa', 'Iry Novick');
+VALUES ('Batmna: A Piada Mortal.', 'Alan Moore & Brian Bolland'),
+('Lendas do Universo DC: Coringa.', 'Iry Novick'),
+('Superman: Entre a Foice e o Martelo.', 'Mark Millar');
 
 -- mostrando tabela e seus valores;
 SELECT * FROM tb_livro;
