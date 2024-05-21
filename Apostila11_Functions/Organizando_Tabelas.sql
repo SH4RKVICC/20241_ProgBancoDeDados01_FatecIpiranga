@@ -1,31 +1,37 @@
--- Apagando tabela antiga;
-DROP TABLE tb_cliente
+-- Apagando tabelas antiga;
+DROP TABLE tb_cliente CASCADE;
+DROP TABLE tb_pedido CASCADE;
+DROP TABLE tb_tipo_item CASCADE;
+DROP TABLE tb_item CASCADE;
+DROP TABLE tb_item_pedido CASCADE;
+
 -- Nova tabela cliente;
-CREATE TABLE tb_cliente (
+CREATE TABLE IF NOT EXISTS tb_cliente(
 	cod_cliente SERIAL PRIMARY KEY
-,	nome VARCHAR(200) NOT NULL
+,
+	nome VARCHAR(200) NOT NULL
 );
 -- Mostrando Resultados;
-SELECT * FROM tb_pedido;
-
--- Apagando tabela antiga;
-DROP TABLE tb_pedido;
+SELECT * FROM tb_cliente;
 -- Nova tabela pedido;
 CREATE TABLE IF NOT EXISTS tb_pedido(
 	cod_pedido SERIAL PRIMARY KEY
-,	data_criacao TIMESTAMP DEFAULT CORRENT_TIMESTAMP
-,	status VARCHAR DEFAULT 'aberto'
+,	data_criacao TIMESTAMP DEFAULT CuRRENT_TIMESTAMP
+,	status VARCHAR(20) DEFAULT 'aberto'
 ,	cod_cliente INT NOT NULL
 ,	CONSTRAINT fk_cliente FOREIGN KEY (cod_cliente) REFERENCES tb_cliente(cod_cliente)
 );
 
--- Apagando tabela antiga;
-DROP TABLE tb_tipo_item;
 -- Nova tabela tipo item;
-CREATE TABLE tb_tipo_item;
+CREATE TABLE tb_tipo_item(
+	cod_tipo SERIAL PRIMARY KEY
+,	descricao VARCHAR(200) NOT NULL
+);
+-- Inserindo Valores;
+INSERT INTO tb_tipo_item (descricao) VALUES ('Bebida'), ('Comida');
+-- Mostrando Resultados;
+SELECT * FROM tb_tipo_item;
 
--- Apagando tabela antiga;
-DROP TABLE tb_item;
 -- Nova tabela item;
 CREATE TABLE IF NOT EXISTS tb_item(
 	cod_item SERIAL PRIMARY KEY
@@ -43,10 +49,8 @@ VALUES ('Refrigerante', 7, 1)
 ,	('Hamburguer', 12, 2)
 ,	('Batata Frita', 9, 2);
 
--- Apagando tabela antiga;
-DROP TABLE tb_item_pedido;
 -- Nova tabela item pedido;
-CREATE TABLE IF NOT EXISTS tb_item_pedido;(
+CREATE TABLE IF NOT EXISTS tb_item_pedido(
 	--surrogate key, assim cod_item pode repetir
 	cod_item_pedido SERIAL PRIMARY KEY
 ,	cod_item INT
