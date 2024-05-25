@@ -1,6 +1,6 @@
 
 # Programação em Banco de Dados I 🐘
-## 👩‍🎓 Premissa;
+## 👩‍🎓 Premissa...
 Neste repositório contém meu processo de aprendizagem completo em Pl/sql, matéria ministrada pelo Professor Bossini da Fatec Ipiranga no primeiro semestre de 2024.
 
 ## 📂 Neste repositorio há meu aprendizado em...
