@@ -5,18 +5,25 @@ variações e outra que use apenas CASE e suas variações.
 Para cada exercício, gere valores aleatórios conforme a necessidade. Use a função
 do Bloco de Código 1.1.
 
-1.1 Faça um programa que gere um valor inteiro e o exiba.
+1.1 Faça um programa que exibe se um número inteiro é múltiplo de 3.
 
-1.2. Faça um programa que gere um valor real e o exiba.
+1.2 Faça um programa que exibe se um número inteiro é múltiplo de 3 ou de 5.
 
-1.3 Faça um programa que gere um valor real no intervalo [20, 30] que representa uma
-temperatura em graus Celsius. Faça a conversão para Fahrenheit e exiba.
+1.3 Faça um programa que opera de acordo com o seguinte menu. Opções:
 
-1.4 Faça um programa que gere três valores reais a, b, e c e mostre o valor de delta: aquele que calculamos para chegar às potenciais raízes de uma equação do segundo grau.
+1 - Soma
+2 - Subtração
+3 - Multiplicação
+4 - Divisão
 
-1.5 Faça um programa que gere um número inteiro e mostre a raiz cúbica de seu antecessor e a raiz quadrada de seu sucessor.
+Cada operação envolve dois números inteiros. O resultado deve ser exibido no formato
+op1 op op2 = res
 
-1.6 Faça um programa que gere medidas reais de um terreno retangular. Gere também um valor real no intervalo [60, 70] que representa o preço por metro quadrado. O programa deve
-exibir o valor total do terreno.
+Exemplo:
+2 + 3 = 5
 
-1.7 Escreva um programa que gere um inteiro que representa o ano de nascimento de uma pessoa no intervalo [1980, 2000] e gere um inteiro que representa o ano atual no intervalo [2010, 2020]. O programa deve exibir a idade da pessoa em anos. Desconsidere detalhes envolvendo dias, meses, anos bissextos etc.
+1.4 Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o valor da compra for menor que R$20. Caso contrário, ele deseja lucro de 30%. Faça um programa que, dado o valor do produto, calcula o valor de venda.
+
+1.5 Resolva o problema disponível no link a seguir.
+
+https://www.beecrowd.com.br/judge/en/problems/view/1048
