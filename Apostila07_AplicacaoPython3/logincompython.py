@@ -14,7 +14,7 @@ def existe (usuario):
     with psycopg.connect(
         host='localhost'
 ,       port=5432
-,       dbname='20221_pessoal_db_login"
+,       dbname='20221_pessoal_db_login'
 ,       user='postgres'
 ,       password='postgres'
     ) as conexao:
