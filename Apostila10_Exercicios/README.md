@@ -1,21 +1,24 @@
-1.1 Adicione uma tabela de log ao sistema do restaurante. Ajuste cada procedimento para
-que ele registre
-- a data em que a operação aconteceu
-- o nome do procedimento executado
-1.2 Adicione um procedimento ao sistema do restaurante. Ele deve
-- receber um parâmetro de entrada (IN) que representa o código de um cliente
-- exibir, com RAISE NOTICE, o total de pedidos que o cliente tem
-1.3 Reescreva o exercício 1.2 de modo que o total de pedidos seja armazenado em uma
-variável de saída (OUT).
-1.4 Adicione um procedimento ao sistema do restaurante. Ele deve
-- Receber um parâmetro de entrada e saída (INOUT)
-- Na entrada, o parâmetro possui o código de um cliente
-- Na saída, o parâmetro deve possuir o número total de pedidos realizados pelo cliente
-1.5 Adicione um procedimento ao sistema do restaurante. Ele deve
-- Receber um parâmetro VARIADIC contendo nomes de pessoas
-- Fazer uma inserção na tabela de clientes para cada nome recebido
-- Receber um parâmetro de saída que contém o seguinte texto:
-“Os clientes: Pedro, Ana, João etc foram cadastrados”
-Evidentemente, o resultado deve conter os nomes que de fato foram enviados por meio do
-parâmetro VARIADIC.
-1.6 Para cada procedimento criado, escreva um bloco anônimo que o coloca em execução.
+# ✏️ Exercícios...
+
+1.1 Resolva cada exercício a seguir usando LOOP, WHILE, FOR e FOREACH. Quando o enunciado disser que é preciso “ler” algum valor, gere-o aleatoriamente.
+
+[Exérc. 01](https://www.beecrowd.com.br/judge/pt/problems/view/1059).
+
+Gerar inteiros no intervalo de -50 a 50.
+[Exérc. 02](https://www.beecrowd.com.br/judge/pt/problems/view/1060).
+
+Gerar inteiros no intervalo de 20 a 50.
+[Exérc. 03](https://www.beecrowd.com.br/judge/pt/problems/view/1071).
+
+Gerar inteiros no intervalo de 1 a 100.
+[Exérc. 01](https://www.beecrowd.com.br/judge/pt/problems/view/1101).
+
+1.2 Faça um programa que calcule o determinante de uma matriz quadrada de ordem 3 utilizando a regra de Sarrus. Veja a regra [aqui](https://en.wikipedia.org/wiki/Rule_of_Sarrus).
+
+Preencha a matriz com valores inteiros aleatórios no intervalo de 1 a 12.
+
+### Dados da Aluna...
+
+| *Nome* | *R.M*|
+|------|---------|
+|Victória Valentina Lima do Amaral|2041382211040|
