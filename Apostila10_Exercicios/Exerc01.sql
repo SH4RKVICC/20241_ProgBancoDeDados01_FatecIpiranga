@@ -1,13 +1,13 @@
 --- Faça um programa que mostre os números pares entre 1 e 100, inclusive.
 
-DO $$
+DO
+$$
 DECLARE
-    num INTEGER := 0;
+    num INT := 0;
 BEGIN
-    FOR num IN 1..100 LOOP
-        IF num % 2 = 0 THEN
-            RAISE NOTICE '%', num;
-        END IF;
-	END LOOP;
+    WHILE num < 101 LOOP
+        RAISE NOTICE '%', num;
+        num := num + 2;
+    END LOOP;
 END;
 $$
