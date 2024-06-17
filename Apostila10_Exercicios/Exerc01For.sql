@@ -8,6 +8,5 @@ BEGIN
         IF num % 2 = 0 THEN
             RAISE NOTICE '%', num;
         END IF;
-	END LOOP;
 END;
-$$
+$$ LANGUAGE plpgsql;
