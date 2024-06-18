@@ -11,7 +11,7 @@ Gerar inteiros no intervalo de 20 a 50.
 [Exérc. 03](https://www.beecrowd.com.br/judge/pt/problems/view/1071).
 
 Gerar inteiros no intervalo de 1 a 100.
-[Exérc. 01](https://www.beecrowd.com.br/judge/pt/problems/view/1101).
+[Exérc. 04](https://www.beecrowd.com.br/judge/pt/problems/view/1101).
 
 1.2 Faça um programa que calcule o determinante de uma matriz quadrada de ordem 3 utilizando a regra de Sarrus. Veja a regra [aqui](https://en.wikipedia.org/wiki/Rule_of_Sarrus).
 
